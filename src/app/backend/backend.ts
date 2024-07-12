@@ -1,3 +1,3 @@
-const baseUrl = `http://localhost:3000`;
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 export const customersUrl= `${baseUrl}/customers`
 export const transactionUrl= `${baseUrl}/transaction`
