@@ -62,24 +62,6 @@ const Sidebar: React.FC<SidebarProps> = ({ links }) => {
             ))}
           </TooltipProvider>
         </nav>
-        <nav className="mt-auto flex flex-col items-center gap-4 px-2 py-5">
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Link
-                  href="#"
-                  className="flex items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground w-full px-2 py-2"
-                >
-                  <div className="flex items-center">
-                    <SettingsIcon className="h-5 w-5" />
-                    {isOpen && <span className="ml-2">Settings</span>}
-                  </div>
-                </Link>
-              </TooltipTrigger>
-              {!isOpen && <TooltipContent side="right">Settings</TooltipContent>}
-            </Tooltip>
-          </TooltipProvider>
-        </nav>
       </aside>
       <button
         onClick={toggleSidebar}
